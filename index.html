@@ -13,13 +13,15 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
         <link rel="icon" href="img/icon.png">
+        
     </head>
     <body>
         <header class="cabecalho">
            <a href="index.html" <h1 class="logo">NodeProp</h1></a>
+           <!--MENU-->
            <button class="btn-menu"><i class="fas fa-bars la-lg"></i></button>
            <nav class="menu">
-               <a class="btn-close">x</a>
+               <a class="btn-close"><i class="fas fa-times"></i></a>
                <ul>
                    <li><a href="#">Home</a></li>
                    <li><a href="#">Clientes</a></li>
@@ -30,6 +32,80 @@
                </ul>
            </nav>
         </header>
+        <div class="banner">
+            <div class="title">
+                <h2>OUSE INOVAR!</h2>
+                <h3>Criamos experiencias e estabelecemos ações estrategicas que inspiram clientes e consumidores</h3>
+            </div>
+            <div class="buttons">
+                <button class="btn-cadastrar">Cadastrar <i class="fas fa-arrow-circle-right"></i></button>
+                <button class="btn-sobre">Sobre <i class="fas fa-question-circle"></i></button>
+            </div>
+        </div>
+        <!--SERVIÇOS-->
+        <main class="servicos">
+            <article class="servico">
+                <a href="#"><img src="img/criacoes.jpg" alt="Campanhas publicitarias"></a>
+                <div class="inner">
+                    <a href="#">Campanhas Publicitarias</a>
+                    <h4>Impressos, VTs e Jingles</h4>
+                    <p>Se voce esta precisando de criaçao de algum materiial especifico etc...</p>
+                </div>
+            </article>
+            <article class="servico">
+                <a href="#"><img src="img/md.jpg" alt="Marketing Digital"></a>
+                <div class="inner">
+                    <a href="#">Marketing Digital</a>
+                    <h4>Administraçao de Redes Sociais</h4>
+                    <p>Se voce esta precisando de criaçao de algum materiial especifico etc...
+                        Agora com mkt digital veja só que incrivel!
+                    </p>
+                </div>
+            </article>
+            <article class="servico">
+                <a href="#"><img src="img/cs.jpg" alt="Criação de Sites"></a>
+                <div class="inner">
+                    <a href="#">Criação de Sites</a>
+                    <h4>Criação do seu site</h4>
+                    <p>Se voce esta precisando de criaçao de algum materiial especifico etc...
+                        Agora com mkt digital veja só que incrivel!
+                        Agora ainda por cima criando sites!
+                    </p>
+                </div>
+            </article>
+        </main>
+        <!--NEWSLETTER-->
+        <section class="newsletter">
+            <h2>Inscreva-se agora!</h2>
+            <h3>Receba novidades, dicas e muito mais</h3>
+            <form >
+                <input type="email" name="email" placeholder="Seu email">
+                <button>Cadastrar</button>
+            </form>
+        </section>
+        <!--RODAPE-->
+        <footer class="rodape">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twittter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">
+                Copyright © Nodeprop 2019. Todos os direitos reservados.
+            </p>
+        </footer>
+        <!--JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>
+        $(".btn-menu").click(function(){
+            $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+            $(".menu").hide();
+        });
         
+        </script>
     </body>
 </html>
